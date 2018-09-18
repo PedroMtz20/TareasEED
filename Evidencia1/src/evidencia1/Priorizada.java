@@ -12,7 +12,7 @@ package evidencia1;
 public class Priorizada<E> {
 
     private int size = 0;
-    private PriorityNode<E> [] data;
+    private PriorityNode<E>[] data;
     private static int INFINITO = 10000;
 
     public Priorizada(int param) {
@@ -42,55 +42,69 @@ public class Priorizada<E> {
         return (this.size == 0);
     }
 
-    public void push(int priority, E param) {
-        //Creamos el nodo a insertar
-        PriorityNode<E> nodeToInsert
-                = new PriorityNode<E>(priority, param);
-        //aumentamos el tamaño de la cola priorizada
-        this.size++;
-        //si es el  primero lo ponemos en la posición 1 y listo
-        if (size == 1) {
-            data[1] = nodeToInsert;
-        } else {
-            //Si no  está vacía la cola priorizada           
-            //la  posición temporal es la última
-            int myPosition = size;
-            //ponemos  el nodo ahí
-            this.data[size] = nodeToInsert;
-            //encontramos  la posición del padre
-            int myParentPosition = (int) (myPosition / 2);
-            //Y  guardamos el valor del padre
-            PriorityNode myParent = data[myParentPosition];
-            //repetimos  intercambiar el padre con el hijo hasta que el padre
-            //tenga  mayor prioridad que el hijo
-            while (myPosition != 1 && data[myParentPosition].getPriority() > nodeToInsert.getPriority()) {
-                data[myPosition] = data[myParentPosition];
-                data[myParentPosition] = nodeToInsert;
-                myPosition = myParentPosition;
-                myParentPosition = (int) (myParentPosition / 2);
-                myParent = data[myParentPosition];
-
-            }
-
-        }
-
-//        if(this.isEmpty()){//Si esta vacio insertar en el primer  lugar
-//            this.size++;
-//            this.data[1] = nodeToInsert;
-//        }else{
-//            this.size++;
+//    public void push(int priority, E param) {
+//        //Creamos el nodo a insertar
+//        PriorityNode<E> nodeToInsert
+//                = new PriorityNode<E>(priority, param);
+//        //aumentamos el tamaño de la cola priorizada
+//        this.size++;
+//        //si es el  primero lo ponemos en la posición 1 y listo
+//        if (size == 1) {
+//            data[1] = nodeToInsert;
+//        } else {
+//            //Si no  está vacía la cola priorizada           
+//            //la  posición temporal es la última
+//            int myPosition = size;
+//            //ponemos  el nodo ahí
 //            this.data[size] = nodeToInsert;
-//            int myposition = size;
-//            int myparentPosition = (int)(size/2);
-//        
-//        while(myposition != 1 && nodeToInsert.getPriority() < data[myparentPosition].getPriority()){
-//            data[myposition] = data[myparentPosition];
-//            data[myparentPosition] = nodeToInsert;
-//            myparentPosition = (int)(myparentPosition/2);
-//            z
+//            //encontramos  la posición del padre
+//            int myParentPosition = (int) (myPosition / 2);
+//            //Y  guardamos el valor del padre
+//            PriorityNode myParent = data[myParentPosition];
+//            //repetimos  intercambiar el padre con el hijo hasta que el padre
+//            //tenga  mayor prioridad que el hijo
+//            while (myPosition != 1 && data[myParentPosition].getPriority() > nodeToInsert.getPriority()) {
+//                data[myPosition] = data[myParentPosition];
+//                data[myParentPosition] = nodeToInsert;
+//                myPosition = myParentPosition;
+//                myParentPosition = (int) (myParentPosition / 2);
+//                myParent = data[myParentPosition];
+//
+//            }
+//
 //        }
-//        }
+    
+    public void push(int priority, E param){
+    PriorityNode nodeToInsert = new PriorityNode(priority, param);
+    this.size++;
+    if (size==1){
+            data[size] = nodeToInsert;
     }
+        else {
+            int myPosition = size;
+        data[myPosition] = nodeToInsert;
+        int myParentPosition = (myPosition / 2);
+        int myBrotherPosition = (myPosition - 1);
+        PriorityNode myParent = data[myParentPosition];
+        PriorityNode myBrother = data[myBrotherPosition];
+        //repetimos  intercambiar el padre con el hijo hasta que el padre
+        //tenga  mayor prioridad que el hijo
+        while (myPosition != 1 && myParent.getPriority() > nodeToInsert.getPriority()) {
+            data[myPosition] = myParent;
+            data[myParentPosition] = nodeToInsert;
+            myPosition = myParentPosition;
+            myParentPosition = (myParentPosition / 2);
+            myParent = data[myParentPosition];
+        }
+        while (myPosition != 1 && myBrother.getPriority() > nodeToInsert.getPriority()) {
+            data[myPosition] = myBrother;
+            data[myBrotherPosition] = nodeToInsert;
+            myPosition = myBrotherPosition;
+            myBrotherPosition = (myBrotherPosition - 1);
+            myBrother = data[myBrotherPosition];
+        }
+    }
+}
 
     public void pop() {
         E result;
@@ -107,7 +121,7 @@ public class Priorizada<E> {
     }
     
     @Override
-    public String toString() {
+        public String toString() {
         String result = "";
 
 
