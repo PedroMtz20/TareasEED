@@ -95,7 +95,7 @@ public class Priorizada<E> {
             myPosition = myParentPosition;
             myParentPosition = (myParentPosition / 2);
             myParent = data[myParentPosition];
-        }
+            }
         while (myPosition != 1 && myBrother.getPriority() > nodeToInsert.getPriority()) {
             data[myPosition] = myBrother;
             data[myBrotherPosition] = nodeToInsert;
@@ -109,7 +109,7 @@ public class Priorizada<E> {
     public void pop() {
         E result;
         result = (E) data[1];
-        for(int i = 1;i <= this.size;i++){
+        for(int i = 1;i < this.size;i++){
             data[i] = data[i+1];
         }
         size--;

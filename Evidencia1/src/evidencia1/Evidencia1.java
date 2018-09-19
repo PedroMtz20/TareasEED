@@ -72,6 +72,8 @@ public class Evidencia1 {
                
            case 3:
                
+               try{
+               
                Timer timer ;
                timer  = new Timer();
                
@@ -106,9 +108,11 @@ public class Evidencia1 {
                 public void run() {
                     System.out.println("Segundos " + cont);
                     System.out.println("Lista: " + myLista);
+                    System.out.println();
                     cont++;
                     
                     if(cont == 181){
+                        System.out.println("El programa ha llegado a su fin, que tenga un buen d[ia");
                         System.exit(0);
                     }
             }
@@ -118,7 +122,9 @@ public class Evidencia1 {
                timer.schedule(push, randomllegada(tiempomax1,tiempomin1), randomllegada(tiempomax1,tiempomin1));
                timer.schedule(pop, randomservidor(tiempomax2,tiempomin2), randomservidor(tiempomax2,tiempomin2));
                timer.schedule(print, 1000,1000);
-               
+               }catch(Exception ex){
+                   System.out.println("Limite alcanzado!");
+               }
                break;
                
            case 4:
