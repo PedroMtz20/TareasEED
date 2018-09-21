@@ -30,15 +30,13 @@ public class Evidencia1 {
        int tiempomax2 = 0;
        int tiempomin1 = 0;
        int tiempomin2 = 0;
+       int tope = 0;
        
-        System.out.println("Establece el tope en enteros: ");
-        int tope = sc.nextInt();
-        Priorizada myLista = new Priorizada(tope);
-       
+       Priorizada myLista = new Priorizada();
        
        do{ 
        System.out.println("Buenos días, Escoge una de las opciones: \n 1.- Establecer rango de tiempo de llegada de los elementos \n"
-               + " 2.- Establecer el rango de tiempo de servicio del servidor \n 3.- Empezar Simulación \n 4.- Terminar programa ");
+               + " 2.- Establecer el rango de tiempo de servicio del servidor \n 3.- Empezar Simulación \n 4.- Terminar programa \n 5.- Establecer tope");
        int sel;
        sel = sc.nextInt();
        
@@ -50,7 +48,7 @@ public class Evidencia1 {
                tiempomin1 = sc.nextInt() * 1000;
                
                while (tiempomax1 < tiempomin1){
-                   System.out.println("Tiempo maximo muy pequeño! Insertelo nuevamente");
+                   System.out.println("¡Tiempo maximo muy pequeño! Insertelo nuevamente");
                    tiempomax1 = sc.nextInt() * 1000;
                }
                
@@ -65,14 +63,12 @@ public class Evidencia1 {
                
                while (tiempomax2 < tiempomin2){
                    System.out.println("Tiempo maximo muy pequeño! Insertelo nuevamente");
-                   tiempomax2 = sc.nextInt() * 1000;
+                   tiempomax2 = sc.nextInt() * 1000;    
                }
                
                break;
                
            case 3:
-               
-               try{
                
                Timer timer ;
                timer  = new Timer();
@@ -82,7 +78,7 @@ public class Evidencia1 {
                public void run(){
                int randomData = (int) Math.floor(Math.random() * 101);
                int randomPrio = (int) Math.ceil(Math.random() * 5);
-               if(!(myLista.getSize() == tope)){
+               if(!(myLista.getSize() == myLista.getTope())){
                myLista.push(randomPrio, randomData);
                System.out.println("Se ha metido un dato");
                }else{
@@ -108,28 +104,31 @@ public class Evidencia1 {
                 public void run() {
                     System.out.println("Segundos " + cont);
                     System.out.println("Lista: " + myLista);
-                    System.out.println();
                     cont++;
                     
                     if(cont == 181){
-                        System.out.println("El programa ha llegado a su fin, que tenga un buen d[ia");
+                        System.out.println("El programa ha terminado!");
                         System.exit(0);
                     }
             }
             };
                
                
-               timer.schedule(push, randomllegada(tiempomax1,tiempomin1), randomllegada(tiempomax1,tiempomin1));
-               timer.schedule(pop, randomservidor(tiempomax2,tiempomin2), randomservidor(tiempomax2,tiempomin2));
+               timer.schedule(push, random(tiempomax1,tiempomin1), random(tiempomax1,tiempomin1));
+               timer.schedule(pop, random(tiempomax2,tiempomin2), random(tiempomax2,tiempomin2));
                timer.schedule(print, 1000,1000);
-               }catch(Exception ex){
-                   System.out.println("Limite alcanzado!");
-               }
+               
                break;
                
            case 4:
            ciclo = false;
                break;
+               
+           case 5:
+            System.out.println("Establece el tope en enteros: ");
+            tope = sc.nextInt();
+            myLista.tope(tope);
+            break;
        }
        
        }while(ciclo == true);
@@ -137,16 +136,10 @@ public class Evidencia1 {
     }
     
     
-public static int randomllegada(int tiempomax1, int tiempomin1){
+public static int random(int tiempomax1, int tiempomin1){
      Random random = new Random();
      int randomllegada = random.nextInt(tiempomax1 +  1 - tiempomin1) + tiempomin1;
      return randomllegada;
 }    
-
-public static int randomservidor(int tiempomax2, int tiempomin2){
-    Random random = new Random();
-    int randomservidor = random.nextInt(tiempomax2 + 1 - tiempomin2) + tiempomin2;
-    return randomservidor;
-}
     
 }

@@ -15,9 +15,16 @@ public class Priorizada<E> {
     private PriorityNode<E>[] data;
     private static int INFINITO = 10000;
 
-    public Priorizada(int param) {
-        INFINITO = param + 1;
+    public Priorizada() {
         data = new PriorityNode[INFINITO];
+    }
+    
+    public void tope(int param){
+        INFINITO = param;
+    }
+    
+    public int getTope(){
+        return INFINITO;
     }
 
 //    public E Peek(){
