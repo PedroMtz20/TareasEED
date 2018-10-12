@@ -8,13 +8,13 @@ public class AvlNode<E> {
     E data = null;
     AvlNode hizq = null;
     AvlNode hder = null;
-    AvlNode yes;
-    AvlNode no;
+    E yes;
+    E no;
 
     public AvlNode() {
     }
 
-    public AvlNode(AvlNode yes, AvlNode no) {
+    public AvlNode(E yes, E no) {
         this.yes = yes;
         this.no = no;
     }
@@ -49,19 +49,19 @@ public class AvlNode<E> {
         this.hder = hder;
     }
 
-    public AvlNode getYes() {
+    public E getYes() {
         return yes;
     }
 
-    public void setYes(AvlNode yes) {
+    public void setYes(E yes) {
         this.yes = yes;
     }
 
-    public AvlNode getNo() {
+    public E getNo() {
         return no;
     }
 
-    public void setNo(AvlNode no) {
+    public void setNo(E no) {
         this.no = no;
     }
 

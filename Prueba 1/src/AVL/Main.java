@@ -12,19 +12,16 @@ public class Main extends Tree {
     
     public static void main (String []args){
         
-        boolean ciclo = true;
         
         Tree bt = new Tree();
         
         bt.addPregunta("Tiene Cuernos?");
-        bt.print();
-
         
-//        do{
-//            System.out.println("Buenos dias, vamos a empezar el juego");
-//
-//            
-//        }while(ciclo == true);
+        try{
+        bt.print();
+        }catch (Exception e){
+            System.out.println(e);
+        }
         
     }
 }

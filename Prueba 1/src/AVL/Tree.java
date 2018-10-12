@@ -6,6 +6,9 @@
 package AVL;
 
 import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 /**
  *
@@ -16,6 +19,8 @@ public class Tree<E> {
     AvlNode root;
 
     Scanner sc = new Scanner(System.in);
+
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     AvlNode actual = root;
 
@@ -50,15 +55,11 @@ public class Tree<E> {
         if (actual == null) {
             actual = new AvlNode(data);
             return actual;
-
         }
-        System.out.println(actual.data);
-        respuesta = sc.next();
-        if (respuesta.equalsIgnoreCase("Yes")) {
+
+        if (respuesta.equalsIgnoreCase((String) actual.yes)) {
             actual.hizq = addPregunta2(actual.hizq, data, respuesta);
-        } else if (respuesta.equalsIgnoreCase("No")) {
-            System.out.println(actual.data);
-            respuesta = sc.next();
+        } else if (respuesta.equalsIgnoreCase((String)actual.no)) {
             actual.hder = addPregunta2(actual.hder, data, respuesta);
         } else {
 
@@ -73,10 +74,16 @@ public class Tree<E> {
     }
 
     private AvlNode addAnimal(AvlNode actual, E data, String respuesta) {
-            data = (E) ("Es: " + data);
-            actual.hder = new AvlNode(data);
-            actual.hizq = new AvlNode("Ganaste");
+        if (actual.hder == null) {
+            actual.hizq.no = actual.yes;
+            actual.hizq.yes = data;
             return actual;
+        }else{
+            actual.hder.no = actual.no;
+            actual.hder.yes = data;
+            return actual;
+        }
+
     }
 
     public void addAnimal(E data, String respuesta) {
@@ -84,100 +91,103 @@ public class Tree<E> {
 
     }
 
-    public void traversePreOrder(AvlNode node) {
-        if (node != null) {
-            System.out.print(" " + node.data);
-            traversePreOrder(node.hizq);
-            traversePreOrder(node.hder);
-        }
-    }
-
-    public void print() {
+    public void print() throws IOException {
         boolean juego = true;
+        String respuesta = null;
+        String animal2 = null;
+
         if (actual == null) {
             actual = root;
-            AvlNode Vaca = new AvlNode("Es: Vaca");
-            AvlNode Perro = new AvlNode("Es: Perro");
-            actual.setHder(Perro);
-            actual.setHizq(Vaca);
-            
+            actual.yes = "Vaca";
+            actual.no = "Perro";
+            System.out.println(actual);
         }
         do {
             while (actual != null) {
-
-                if (actual.hizq.data == null && actual.hder.data == null) {
-                    System.out.println("Ganaste!\n Deseas segir jugando?");
-                    juego = sc.nextBoolean();
-                    if (juego == true){
-                        actual = root;
+                boolean noencontrado = false;
+                actual = root;
+                System.out.println(actual.data);
+                respuesta = br.readLine();
+                while (!(actual.hder == null && actual.hizq == null)) {
+                    if (respuesta.equalsIgnoreCase("Yes")) {
+                        if(root.hizq == null){
+                            break;
+                        }
+                        actual = actual.hizq;
+                        System.out.println(actual.data);
+                        respuesta = br.readLine();
+                    } else {
+                        if(root.hder == null){
+                            break;
+                        }
+                        actual = actual.hder;
+                        System.out.println(actual.data);
+                        respuesta = br.readLine();
                     }
                 }
-                System.out.println(actual.data);
-                String respuesta = sc.next();
-                if (respuesta.equalsIgnoreCase("Yes")) {
-                    actual = actual.hizq;
 
-                } else if (respuesta.equalsIgnoreCase("No")) {
-                    if (actual.hder == null) {
-                        System.out.println("No se en que estas pensando!. Dime el animal en el que estas pensando");
-                        String animal = sc.next();
-                        System.out.println("Ahora dime la pregunta con la que lo puedo identificar");
-                        String pregunta = sc.next();
-                        addAnimal(actual,(E) animal, pregunta);
-                        System.out.println("He perdido! Desea seguir jugando?");
-                        juego = sc.nextBoolean();
-                        if (juego == true){
-                            actual = root;
+                    if (respuesta.equalsIgnoreCase("Yes")) {
+                        System.out.println("El animal es: " + actual.yes + "?");
+                        respuesta = br.readLine();
+                        animal2 = (String) actual.yes;
+                        if (respuesta.equalsIgnoreCase("Yes")) {
+                            System.out.println("He ganado!\nDesea jugar otra vez?");
+                            juego = sc.nextBoolean();
+                            break;
+                        } else if (respuesta.equalsIgnoreCase("No")) {
+                            System.out.println("No se en que estas pensando!. Dime el animal en el que estas pensando");
+                            String animal = br.readLine();
+                            System.out.println("Ahora dime la pregunta con la que lo puedo identificar");
+                            String pregunta = br.readLine();
+                            addPregunta2(actual, (E) pregunta, animal2);
+                            //actual = actual.hizq;
+                            addAnimal(actual, (E) animal, animal2);
+                            System.out.println("He perdido! Desea seguir jugando?");
+                            juego = sc.nextBoolean();
+                            if (juego == true) {
+                                actual = root;
+                            }
                         }
-                    } else if (actual.hder != null) {
-                        System.out.println(actual.hder.data);
-                        respuesta = sc.next();
-                        actual = actual.hder;
+                    } else {
+                        System.out.println("El animal es: " + actual.no + "?");
+                        respuesta = br.readLine();
+                        animal2 = (String) actual.no;
+                        if (respuesta.equalsIgnoreCase("Yes")) {
+                            System.out.println("He ganado!\nDesea jugar otra vez?");
+                            juego = sc.nextBoolean();
+                        } else if (respuesta.equalsIgnoreCase("No")) {
+                            System.out.println("No se en que estas pensando!. Dime el animal en el que estas pensando");
+                            String animal = br.readLine();
+                            System.out.println("Ahora dime la pregunta con la que lo puedo identificar");
+                            String pregunta = br.readLine();
+                            addPregunta2(actual, (E) pregunta, animal2);
+                            //actual = actual.hder;
+                            addAnimal(actual, (E) animal, animal2);
+                            System.out.println("He perdido! Desea seguir jugando?");
+                            juego = sc.nextBoolean();
+                            if (juego == true) {
+                                actual = root;
+                            }
+                        }
+
                     }
 
+                
+
+                if (noencontrado == true) {
+                    System.out.println("No se en que estas pensando!. Dime el animal en el que estas pensando");
+                    String animal = br.readLine();
+                    System.out.println("Ahora dime la pregunta con la que lo puedo identificar");
+                    String pregunta = br.readLine();
+                    addPregunta2(actual, (E) pregunta, respuesta);
+                    addAnimal(actual, (E) animal, pregunta);
+                    System.out.println("He perdido! Desea seguir jugando?");
+                    juego = sc.nextBoolean();
+                    if (juego == true) {
+                        actual = root;
+                    }
                 }
             }
         } while (juego == true);
     }
-
-//    public void addQuestion(String respuesta, String pregunta, AvlNode a) {
-//        if(a.getHizq() == null){
-//            AvlNode preguntaNodo = new AvlNode(pregunta);
-//            AvlNode respuestaNodo = new AvlNode (respuesta);
-//            preguntaNodo.setYes(respuestaNodo);
-//            a.setNo(preguntaNodo);
-//        }else{
-//            AvlNode preguntaNodo = new AvlNode(pregunta);
-//            AvlNode respuestaNodo = new AvlNode (respuesta);
-//            preguntaNodo.setYes(respuestaNodo);
-//            a.setYes(preguntaNodo);
-//        }
-//
-//    }
-/*
-    public void add(AvlNode nodo) {
-        this.ad(nodo, this.root);
-    }
-
-    private void addAnimal(AvlNode nodo, AvlNode root) {
-        if (root == null) {
-            this.setRoot(nodo);
-        } else {
-            if (nodo.getNo() == null) {
-                if (root.getHizq() == null) {
-                    root.setHizq(nodo);
-                } else {
-                    addAnimal(nodo, root.getHizq());
-                }
-            } else {
-                if (root.getHder() == null) {
-                    root.setHder(nodo);
-                } else {
-                    addAnimal(nodo, root.getHder());
-                }
-            }
-        }
-
-    }
-     */
 }
