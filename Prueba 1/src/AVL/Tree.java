@@ -77,10 +77,12 @@ public class Tree<E> {
         if (actual.hder == null) {
             actual.hizq.no = actual.yes;
             actual.hizq.yes = data;
+            actual.yes = null;
             return actual;
         }else{
             actual.hder.no = actual.no;
             actual.hder.yes = data;
+            actual.no = null;
             return actual;
         }
 
@@ -101,10 +103,9 @@ public class Tree<E> {
             actual.yes = "Vaca";
             actual.no = "Perro";
             System.out.println(actual);
-        }
+        }   
         do {
             while (actual != null) {
-                boolean noencontrado = false;
                 actual = root;
                 System.out.println(actual.data);
                 respuesta = br.readLine();
@@ -171,22 +172,6 @@ public class Tree<E> {
                         }
 
                     }
-
-                
-
-                if (noencontrado == true) {
-                    System.out.println("No se en que estas pensando!. Dime el animal en el que estas pensando");
-                    String animal = br.readLine();
-                    System.out.println("Ahora dime la pregunta con la que lo puedo identificar");
-                    String pregunta = br.readLine();
-                    addPregunta2(actual, (E) pregunta, respuesta);
-                    addAnimal(actual, (E) animal, pregunta);
-                    System.out.println("He perdido! Desea seguir jugando?");
-                    juego = sc.nextBoolean();
-                    if (juego == true) {
-                        actual = root;
-                    }
-                }
             }
         } while (juego == true);
     }
