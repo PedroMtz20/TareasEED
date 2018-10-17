@@ -1,9 +1,12 @@
 
 package AVL;
+import java.io.*;
 
 //data menor en el derecho y mayor en el derecho
 
-public class AvlNode<E> {
+public class AvlNode<E> implements Serializable {
+    
+    //Se declaran las partes que tiene el nodo
     
     E data = null;
     AvlNode hizq = null;
@@ -11,6 +14,7 @@ public class AvlNode<E> {
     E yes;
     E no;
 
+    //Constructores
     public AvlNode() {
     }
 
@@ -24,7 +28,7 @@ public class AvlNode<E> {
     }
 
     
-    
+    //Getters y Setters
     public E getData() {
         return data;
     }
@@ -65,6 +69,7 @@ public class AvlNode<E> {
         this.no = no;
     }
 
+    //Metodo toString para comprobar que si se tenga todo
     @Override
     public String toString() {
         return "AvlNode{" + "data=" + data + ", hizq=" + hizq + ", hder=" + hder + ", yes=" + yes + ", no=" + no + '}';
