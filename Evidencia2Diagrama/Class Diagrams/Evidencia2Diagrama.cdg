@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="AVL">
+  <ClassDiagramComponents>
+    <Class name="AvlNode" package="AVL" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="data" type="E" visibility="package"/>
+        <Field name="hizq" type="AvlNode" visibility="package"/>
+        <Field name="hder" type="AvlNode" visibility="package"/>
+        <Field name="yes" type="E" visibility="package"/>
+        <Field name="no" type="E" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="E" name="yes"/>
+          <Argument type="E" name="no"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="E" name="data"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getData" returnType="E" visibility="public"/>
+        <Method name="setData" returnType="void" visibility="public">
+          <Argument type="E" name="data"/>
+        </Method>
+        <Method name="getHizq" returnType="AvlNode" visibility="public"/>
+        <Method name="setHizq" returnType="void" visibility="public">
+          <Argument type="AvlNode" name="hizq"/>
+        </Method>
+        <Method name="getHder" returnType="AvlNode" visibility="public"/>
+        <Method name="setHder" returnType="void" visibility="public">
+          <Argument type="AvlNode" name="hder"/>
+        </Method>
+        <Method name="getYes" returnType="E" visibility="public"/>
+        <Method name="setYes" returnType="void" visibility="public">
+          <Argument type="E" name="yes"/>
+        </Method>
+        <Method name="getNo" returnType="E" visibility="public"/>
+        <Method name="setNo" returnType="void" visibility="public">
+          <Argument type="E" name="no"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Main" package="AVL" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="bt" type="Tree" visibility="private" isStatic="true"/>
+        <Field name="format" type="FileOutputStream" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+        <Method name="Load" returnType="Object" visibility="private" isStatic="true"/>
+        <Method name="FileNew" returnType="void" visibility="private" isStatic="true"/>
+        <Method name="Save" returnType="void" visibility="private" isStatic="true">
+          <Argument type="Object" name="Datos"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Tree" package="AVL" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="root" type="AvlNode" visibility="package"/>
+        <Field name="animal2" type="String" visibility="package"/>
+        <Field name="sc" type="Scanner" visibility="package" isTransient="true"/>
+        <Field name="br" type="BufferedReader" visibility="package" isTransient="true"/>
+        <Field name="actual" type="AvlNode" visibility="package"/>
+        <Field name="respuesta" type="String" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getAnimal2" returnType="String" visibility="public"/>
+        <Method name="setAnimal2" returnType="void" visibility="public">
+          <Argument type="String" name="animal2"/>
+        </Method>
+        <Method name="getRoot" returnType="AvlNode" visibility="public"/>
+        <Method name="setRoot" returnType="void" visibility="public">
+          <Argument type="AvlNode" name="root"/>
+          <Argument type="E" name="yes"/>
+          <Argument type="E" name="no"/>
+        </Method>
+        <Method name="getRespuesta" returnType="String" visibility="public"/>
+        <Method name="setRespuesta" returnType="void" visibility="public">
+          <Argument type="String" name="respuesta"/>
+        </Method>
+        <Method name="getActual" returnType="AvlNode" visibility="public"/>
+        <Method name="setActual" returnType="void" visibility="public">
+          <Argument type="AvlNode" name="actual"/>
+        </Method>
+        <Method name="addPregunta" returnType="AvlNode" visibility="public">
+          <Argument type="AvlNode" name="actual"/>
+          <Argument type="E" name="data"/>
+          <Argument type="String" name="respuesta"/>
+        </Method>
+        <Method name="addAnimal" returnType="AvlNode" visibility="private">
+          <Argument type="AvlNode" name="actual"/>
+          <Argument type="E" name="data"/>
+          <Argument type="E" name="pregunta"/>
+        </Method>
+        <Method name="print" returnType="void" visibility="public"/>
+        <Method name="recorrer" returnType="AvlNode" visibility="public">
+          <Argument type="AvlNode" name="actual"/>
+          <Argument type="String" name="respuesta"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="bt" source="AVL.Main" target="AVL.Tree" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="AVL.AvlNode" target="AVL.AvlNode" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="actual" source="AVL.Tree" target="AVL.AvlNode" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="hder" source="AVL.AvlNode" target="AVL.AvlNode" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="hizq" source="AVL.AvlNode" target="AVL.AvlNode" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="root" source="AVL.Tree" target="AVL.AvlNode" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="AVL.Tree" target="AVL.AvlNode" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
