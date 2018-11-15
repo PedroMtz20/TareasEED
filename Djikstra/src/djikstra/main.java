@@ -25,7 +25,7 @@ public class main {
         A.addAdjecente(new Arista(A,B,7));
         B.addAdjecente(new Arista(B,C,2));
         
-        System.out.println(grafo.caminoMasCorto(A, C));
+        System.out.println(grafo.caminoMasCorto(A,C));
     }
     
 }
