@@ -47,10 +47,15 @@ public class Djikstra {
         }
         
         List<Node> camino = new ArrayList<>();
+        int peso;
         
         for(Node nodo = fin; nodo != null;nodo = nodo.getNodoAnterior()){
             camino.add(nodo);
+            if(nodo == fin)
+            System.out.print("El peso de la ruta es: " + nodo.getPeso() + " con la siguiente ruta: ");
         }
+        
+       
         
         Collections.reverse(camino);
         return camino;
