@@ -5,8 +5,8 @@
  */
 package djikstra;
 
-
-import java.lang.Math;
+import java.util.List;
+import java.util.Stack;
 
 /**
  *
@@ -14,9 +14,11 @@ import java.lang.Math;
  */
 public class main {
     
-    public static void main(String[] args){
+    public static void main (String[] args){
         
         Djikstra grafo = new Djikstra();
+        
+        Stack todos = new Stack();
         
         Node A = new Node("A");
         Node B = new Node("B");
@@ -41,7 +43,7 @@ public class main {
         B.addAdjecente(new Arista(B,E,1));
         C.addAdjecente(new Arista(C,D,6));
         E.addAdjecente(new Arista(E,D,9));
-        D.addAdjecente(new Arista(D,H,12));
+        D.addAdjecente(new Arista(D,H,2));
         D.addAdjecente(new Arista(D,I,18));
         F.addAdjecente(new Arista(F,E,4));
         F.addAdjecente(new Arista(F,G,19));
@@ -57,9 +59,25 @@ public class main {
         M.addAdjecente(new Arista(M,N,6));
         N.addAdjecente(new Arista(N,O,10));
         
-        System.out.println(grafo.caminoMasCorto(A,O));
+        todos.push(A);
+        todos.push(B);
+        todos.push(C);
+        todos.push(D);
+        todos.push(E);
+        todos.push(F);
+        todos.push(G);
+        todos.push(H);
+        todos.push(I);
+        todos.push(J);
+        todos.push(K);
+        todos.push(L);
+        todos.push(M);
+        todos.push(N);
+        todos.push(O);
         
-        System.out.println(grafo.PruebaRecursiva(A,O));
+        System.out.println(grafo.caminoMasCorto(A,O));
+        System.out.println(grafo.TSP(A, 0, todos));
+        
     }
     
 }
