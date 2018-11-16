@@ -20,6 +20,7 @@ public class main {
         
         Stack todos = new Stack();
         
+        
         Node A = new Node("A");
         Node B = new Node("B");
         Node C = new Node("C");
@@ -76,7 +77,6 @@ public class main {
         todos.push(O);
         
         System.out.println(grafo.caminoMasCorto(A,O));
-        System.out.println(grafo.TSP(A, 0, todos));
         
     }
     

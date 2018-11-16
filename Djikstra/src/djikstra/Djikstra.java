@@ -102,7 +102,6 @@ public class Djikstra {
         }
         permanente.add(inicio);
         permanente.addAll(TSP(pendientes.pop(), costo, pendientes));
-        Collections.sort(permanente);
         
         
         return permanente;
