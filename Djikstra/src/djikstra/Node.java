@@ -19,6 +19,7 @@ public class Node implements Comparable<Node> {
         this.adjecentes = new ArrayList<>();
     }
     
+    //Getters y Setters
     public void addAdjecente(Arista arista){
         this.adjecentes.add(arista);
     }

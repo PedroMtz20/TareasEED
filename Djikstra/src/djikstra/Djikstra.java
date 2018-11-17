@@ -27,7 +27,7 @@ public class Djikstra {
         while (!prioridadTemporal.isEmpty()) {
             //Almacenamos en actual el nodo de menor valor, y despues se quita de la cola
             Node actual = prioridadTemporal.poll();
-            //Un for en el cual se itere mientras halla adjecentes en el nodo actual
+            //Un for en el cual zse itere mientras halla adjecentes en el nodo actual
             for (Arista arista : actual.getAdjecentes()) {
                 //Almacenamos en el nodo auxiliar el destino de la arista que contiene el nodo auxiliar
                 Node aux = arista.getTarget();
@@ -70,41 +70,6 @@ public class Djikstra {
         //Organizar la lista voltandola
         Collections.reverse(camino);
         return camino;
-    }
-    
-    public Stack<Node> TSP(Node inicio, int costo, Stack<Node> pendientes){
-        Stack<Node> permanente = new Stack();
-        
-        if(pendientes.size()==0){
-            return permanente;
-        }
-        
-        for(Arista arista : inicio.getAdjecentes()){
-                Node aux = arista.getTarget();
-                //Mientras que no halla sido visitado continuar
-                if (!aux.isVisitado()) {
-                    //Se actualiza el label del nodo si nunca ha sido visitado, ya que el label en este
-                    //caso seria igual a infinito
-                    int LabelPeso = inicio.getPeso() + arista.getPeso();
-                    //Si el label nuevo es menor que el label anterior entonces hay que actualizar
-                    if (LabelPeso < costo) {
-                        //Se elimina el nodo auxiliar de cola priorizada
-                        pendientes.remove(aux);
-                        //Al nodo auxiliar se le asigna el nuevo label de peso
-                        aux.setPeso(LabelPeso);
-                        //Se asigna que el nodo de el que viene es el anterior
-                        aux.setNodoAnterior(inicio);
-                        // Se agrega el nodo auxiliar actualizado a la cola priorizada, para ser manipulado en otro ciclo
-                        // como el nodo actual
-                        pendientes.add(aux);
-                    }
-                }
-        }
-        permanente.add(inicio);
-        permanente.addAll(TSP(pendientes.pop(), costo, pendientes));
-        
-        
-        return permanente;
     }
     
 
