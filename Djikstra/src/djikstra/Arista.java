@@ -13,12 +13,14 @@ public class Arista {
     private Node raiz; //Nodo raiz de la arista
     private Node target; //Nodo en el que unira la arista con la raiz
     
+    //Constructor
     public Arista(Node raiz, Node target, int peso){
         this.raiz = raiz;
         this.target = target;
         this.peso = peso;
     }
 
+    //Getters y Setters
     public int getPeso() {
         return peso;
     }
