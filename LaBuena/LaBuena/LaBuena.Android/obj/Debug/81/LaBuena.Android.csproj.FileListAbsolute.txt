@@ -1,0 +1,2 @@
+D:\Documentos\Visual\repos\LaBuena\LaBuena\LaBuena.Android\obj\Debug\81\MonoAndroid,Version=v8.1.AssemblyAttributes.cs
+D:\Documentos\Visual\repos\LaBuena\LaBuena\LaBuena.Android\obj\Debug\81\LaBuena.Android.nuget.stamp

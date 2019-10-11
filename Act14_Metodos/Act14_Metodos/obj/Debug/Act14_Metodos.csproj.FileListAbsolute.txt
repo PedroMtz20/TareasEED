@@ -1,0 +1,7 @@
+D:\Documentos\Visual\repos\Act14_Metodos\Act14_Metodos\obj\Debug\Act14_Metodos.csprojAssemblyReference.cache
+D:\Documentos\Visual\repos\Act14_Metodos\Act14_Metodos\obj\Debug\Act14_Metodos.csproj.CoreCompileInputs.cache
+D:\Documentos\Visual\repos\Act14_Metodos\Act14_Metodos\bin\Debug\Act14_Metodos.exe.config
+D:\Documentos\Visual\repos\Act14_Metodos\Act14_Metodos\bin\Debug\Act14_Metodos.exe
+D:\Documentos\Visual\repos\Act14_Metodos\Act14_Metodos\bin\Debug\Act14_Metodos.pdb
+D:\Documentos\Visual\repos\Act14_Metodos\Act14_Metodos\obj\Debug\Act14_Metodos.exe
+D:\Documentos\Visual\repos\Act14_Metodos\Act14_Metodos\obj\Debug\Act14_Metodos.pdb

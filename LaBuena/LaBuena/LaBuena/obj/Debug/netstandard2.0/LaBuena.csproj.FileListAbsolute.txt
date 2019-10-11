@@ -1,0 +1,8 @@
+D:\Documentos\Visual\repos\LaBuena\LaBuena\LaBuena\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Documentos\Visual\repos\LaBuena\LaBuena\LaBuena\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\Documentos\Visual\repos\LaBuena\LaBuena\LaBuena\obj\Debug\netstandard2.0\MasStickers.xaml.g.cs
+D:\Documentos\Visual\repos\LaBuena\LaBuena\LaBuena\obj\Debug\netstandard2.0\LaBuena.csproj.CoreCompileInputs.cache
+D:\Documentos\Visual\repos\LaBuena\LaBuena\LaBuena\obj\Debug\netstandard2.0\LaBuena.AssemblyInfoInputs.cache
+D:\Documentos\Visual\repos\LaBuena\LaBuena\LaBuena\obj\Debug\netstandard2.0\LaBuena.AssemblyInfo.cs
+D:\Documentos\Visual\repos\LaBuena\LaBuena\LaBuena\obj\Debug\netstandard2.0\LaBuena.dll
+D:\Documentos\Visual\repos\LaBuena\LaBuena\LaBuena\obj\Debug\netstandard2.0\LaBuena.pdb

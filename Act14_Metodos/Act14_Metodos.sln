@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Act14_Metodos", "Act14_Metodos\Act14_Metodos.csproj", "{57AA0854-E567-44AF-87D0-F3B9375FC85F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57AA0854-E567-44AF-87D0-F3B9375FC85F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57AA0854-E567-44AF-87D0-F3B9375FC85F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57AA0854-E567-44AF-87D0-F3B9375FC85F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57AA0854-E567-44AF-87D0-F3B9375FC85F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5EAFEE55-71D4-4311-95BA-2BF2B04E495F}
+	EndGlobalSection
+EndGlobal

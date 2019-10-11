@@ -1,0 +1,11 @@
+D:\Documentos\Visual\repos\Tarea12_Metodos\Tarea12_Metodos\bin\Debug\netcoreapp2.1\Tarea12_Metodos.deps.json
+D:\Documentos\Visual\repos\Tarea12_Metodos\Tarea12_Metodos\bin\Debug\netcoreapp2.1\Tarea12_Metodos.runtimeconfig.json
+D:\Documentos\Visual\repos\Tarea12_Metodos\Tarea12_Metodos\bin\Debug\netcoreapp2.1\Tarea12_Metodos.runtimeconfig.dev.json
+D:\Documentos\Visual\repos\Tarea12_Metodos\Tarea12_Metodos\bin\Debug\netcoreapp2.1\Tarea12_Metodos.dll
+D:\Documentos\Visual\repos\Tarea12_Metodos\Tarea12_Metodos\bin\Debug\netcoreapp2.1\Tarea12_Metodos.pdb
+D:\Documentos\Visual\repos\Tarea12_Metodos\Tarea12_Metodos\obj\Debug\netcoreapp2.1\Tarea12_Metodos.csprojAssemblyReference.cache
+D:\Documentos\Visual\repos\Tarea12_Metodos\Tarea12_Metodos\obj\Debug\netcoreapp2.1\Tarea12_Metodos.csproj.CoreCompileInputs.cache
+D:\Documentos\Visual\repos\Tarea12_Metodos\Tarea12_Metodos\obj\Debug\netcoreapp2.1\Tarea12_Metodos.AssemblyInfoInputs.cache
+D:\Documentos\Visual\repos\Tarea12_Metodos\Tarea12_Metodos\obj\Debug\netcoreapp2.1\Tarea12_Metodos.AssemblyInfo.cs
+D:\Documentos\Visual\repos\Tarea12_Metodos\Tarea12_Metodos\obj\Debug\netcoreapp2.1\Tarea12_Metodos.dll
+D:\Documentos\Visual\repos\Tarea12_Metodos\Tarea12_Metodos\obj\Debug\netcoreapp2.1\Tarea12_Metodos.pdb

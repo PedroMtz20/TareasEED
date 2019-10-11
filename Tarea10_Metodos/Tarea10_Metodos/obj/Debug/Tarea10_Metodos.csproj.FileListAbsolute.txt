@@ -1,0 +1,6 @@
+D:\Documentos\Visual\repos\Tarea10_Metodos\Tarea10_Metodos\bin\Debug\Tarea10_Metodos.exe.config
+D:\Documentos\Visual\repos\Tarea10_Metodos\Tarea10_Metodos\bin\Debug\Tarea10_Metodos.exe
+D:\Documentos\Visual\repos\Tarea10_Metodos\Tarea10_Metodos\bin\Debug\Tarea10_Metodos.pdb
+D:\Documentos\Visual\repos\Tarea10_Metodos\Tarea10_Metodos\obj\Debug\Tarea10_Metodos.csproj.CoreCompileInputs.cache
+D:\Documentos\Visual\repos\Tarea10_Metodos\Tarea10_Metodos\obj\Debug\Tarea10_Metodos.exe
+D:\Documentos\Visual\repos\Tarea10_Metodos\Tarea10_Metodos\obj\Debug\Tarea10_Metodos.pdb

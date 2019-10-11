@@ -1,0 +1,6 @@
+C:\Users\TecMilenio\AppData\Local\Temporary Projects\Actividad_1_Pedro\bin\Debug\Actividad_1_Pedro.exe
+C:\Users\TecMilenio\AppData\Local\Temporary Projects\Actividad_1_Pedro\bin\Debug\Actividad_1_Pedro.pdb
+C:\Users\TecMilenio\AppData\Local\Temporary Projects\Actividad_1_Pedro\obj\x86\Debug\Actividad_1_Pedro.exe
+C:\Users\TecMilenio\AppData\Local\Temporary Projects\Actividad_1_Pedro\obj\x86\Debug\Actividad_1_Pedro.pdb
+C:\Users\TecMilenio\Desktop\Actividad_1_Pedro\Actividad_1_Pedro\obj\x86\Debug\Actividad_1_Pedro.exe
+C:\Users\TecMilenio\Desktop\Actividad_1_Pedro\Actividad_1_Pedro\obj\x86\Debug\Actividad_1_Pedro.pdb

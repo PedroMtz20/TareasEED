@@ -1,0 +1,9 @@
+D:\Documentos\Visual\repos\Proyecto1\Alreaciones.DL\bin\Debug\Alreaciones.DL.dll
+D:\Documentos\Visual\repos\Proyecto1\Alreaciones.DL\bin\Debug\Alreaciones.DL.pdb
+D:\Documentos\Visual\repos\Proyecto1\Alreaciones.DL\bin\Debug\Aleaciones.Entities.dll
+D:\Documentos\Visual\repos\Proyecto1\Alreaciones.DL\bin\Debug\Aleaciones.Entities.pdb
+D:\Documentos\Visual\repos\Proyecto1\Alreaciones.DL\obj\Debug\Aleaciones.DL.csprojAssemblyReference.cache
+D:\Documentos\Visual\repos\Proyecto1\Alreaciones.DL\obj\Debug\Aleaciones.DL.csproj.CoreCompileInputs.cache
+D:\Documentos\Visual\repos\Proyecto1\Alreaciones.DL\obj\Debug\Aleaciones.DL.csproj.CopyComplete
+D:\Documentos\Visual\repos\Proyecto1\Alreaciones.DL\obj\Debug\Alreaciones.DL.dll
+D:\Documentos\Visual\repos\Proyecto1\Alreaciones.DL\obj\Debug\Alreaciones.DL.pdb

@@ -1,0 +1,7 @@
+D:\Documentos\Visual\repos\Tarea11_Metodos\Tarea11_Metodos\bin\Debug\Tarea11_Metodos.exe.config
+D:\Documentos\Visual\repos\Tarea11_Metodos\Tarea11_Metodos\bin\Debug\Tarea11_Metodos.exe
+D:\Documentos\Visual\repos\Tarea11_Metodos\Tarea11_Metodos\bin\Debug\Tarea11_Metodos.pdb
+D:\Documentos\Visual\repos\Tarea11_Metodos\Tarea11_Metodos\obj\Debug\Tarea11_Metodos.csprojAssemblyReference.cache
+D:\Documentos\Visual\repos\Tarea11_Metodos\Tarea11_Metodos\obj\Debug\Tarea11_Metodos.csproj.CoreCompileInputs.cache
+D:\Documentos\Visual\repos\Tarea11_Metodos\Tarea11_Metodos\obj\Debug\Tarea11_Metodos.exe
+D:\Documentos\Visual\repos\Tarea11_Metodos\Tarea11_Metodos\obj\Debug\Tarea11_Metodos.pdb

@@ -1,0 +1,7 @@
+D:\Documentos\Visual\repos\Actividad13_Metodos\Actividad13_Metodos\bin\Debug\Actividad13_Metodos.exe.config
+D:\Documentos\Visual\repos\Actividad13_Metodos\Actividad13_Metodos\bin\Debug\Actividad13_Metodos.exe
+D:\Documentos\Visual\repos\Actividad13_Metodos\Actividad13_Metodos\bin\Debug\Actividad13_Metodos.pdb
+D:\Documentos\Visual\repos\Actividad13_Metodos\Actividad13_Metodos\obj\Debug\Actividad13_Metodos.csprojAssemblyReference.cache
+D:\Documentos\Visual\repos\Actividad13_Metodos\Actividad13_Metodos\obj\Debug\Actividad13_Metodos.csproj.CoreCompileInputs.cache
+D:\Documentos\Visual\repos\Actividad13_Metodos\Actividad13_Metodos\obj\Debug\Actividad13_Metodos.exe
+D:\Documentos\Visual\repos\Actividad13_Metodos\Actividad13_Metodos\obj\Debug\Actividad13_Metodos.pdb

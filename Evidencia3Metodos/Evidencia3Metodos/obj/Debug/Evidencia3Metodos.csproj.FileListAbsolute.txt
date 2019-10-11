@@ -1,0 +1,7 @@
+D:\Documentos\Visual\repos\Evidencia3Metodos\Evidencia3Metodos\bin\Debug\Evidencia3Metodos.exe.config
+D:\Documentos\Visual\repos\Evidencia3Metodos\Evidencia3Metodos\bin\Debug\Evidencia3Metodos.exe
+D:\Documentos\Visual\repos\Evidencia3Metodos\Evidencia3Metodos\bin\Debug\Evidencia3Metodos.pdb
+D:\Documentos\Visual\repos\Evidencia3Metodos\Evidencia3Metodos\obj\Debug\Evidencia3Metodos.csprojAssemblyReference.cache
+D:\Documentos\Visual\repos\Evidencia3Metodos\Evidencia3Metodos\obj\Debug\Evidencia3Metodos.csproj.CoreCompileInputs.cache
+D:\Documentos\Visual\repos\Evidencia3Metodos\Evidencia3Metodos\obj\Debug\Evidencia3Metodos.exe
+D:\Documentos\Visual\repos\Evidencia3Metodos\Evidencia3Metodos\obj\Debug\Evidencia3Metodos.pdb

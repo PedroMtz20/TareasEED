@@ -1,0 +1,7 @@
+D:\Documentos\Visual\repos\Tarea2P\Tarea2P\bin\Debug\Tarea2P.exe.config
+D:\Documentos\Visual\repos\Tarea2P\Tarea2P\bin\Debug\Tarea2P.exe
+D:\Documentos\Visual\repos\Tarea2P\Tarea2P\bin\Debug\Tarea2P.pdb
+D:\Documentos\Visual\repos\Tarea2P\Tarea2P\obj\Debug\Tarea2P.csprojAssemblyReference.cache
+D:\Documentos\Visual\repos\Tarea2P\Tarea2P\obj\Debug\Tarea2P.csproj.CoreCompileInputs.cache
+D:\Documentos\Visual\repos\Tarea2P\Tarea2P\obj\Debug\Tarea2P.exe
+D:\Documentos\Visual\repos\Tarea2P\Tarea2P\obj\Debug\Tarea2P.pdb

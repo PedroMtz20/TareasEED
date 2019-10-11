@@ -1,0 +1,12 @@
+D:\Documentos\Visual\repos\Moviles\SimpleTheme\bin\Debug\netstandard2.0\SimpleTheme.deps.json
+D:\Documentos\Visual\repos\Moviles\SimpleTheme\bin\Debug\netstandard2.0\SimpleTheme.dll
+D:\Documentos\Visual\repos\Moviles\SimpleTheme\bin\Debug\netstandard2.0\SimpleTheme.pdb
+D:\Documentos\Visual\repos\Moviles\SimpleTheme\obj\Debug\netstandard2.0\SimpleTheme.csprojAssemblyReference.cache
+D:\Documentos\Visual\repos\Moviles\SimpleTheme\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Documentos\Visual\repos\Moviles\SimpleTheme\obj\Debug\netstandard2.0\HomePage.xaml.g.cs
+D:\Documentos\Visual\repos\Moviles\SimpleTheme\obj\Debug\netstandard2.0\SimpleTheme.csproj.CoreCompileInputs.cache
+D:\Documentos\Visual\repos\Moviles\SimpleTheme\obj\Debug\netstandard2.0\SimpleTheme.AssemblyInfoInputs.cache
+D:\Documentos\Visual\repos\Moviles\SimpleTheme\obj\Debug\netstandard2.0\SimpleTheme.AssemblyInfo.cs
+D:\Documentos\Visual\repos\Moviles\SimpleTheme\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Documentos\Visual\repos\Moviles\SimpleTheme\obj\Debug\netstandard2.0\SimpleTheme.dll
+D:\Documentos\Visual\repos\Moviles\SimpleTheme\obj\Debug\netstandard2.0\SimpleTheme.pdb

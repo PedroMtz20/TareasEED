@@ -1,0 +1,148 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Documentos\\Visual\\repos\\Act14_Moviles\\Act14_Moviles\\Act14_Moviles.Android\\Act14_Moviles.Android.csproj": {}
+  },
+  "projects": {
+    "D:\\Documentos\\Visual\\repos\\Act14_Moviles\\Act14_Moviles\\Act14_Moviles.Android\\Act14_Moviles.Android.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Documentos\\Visual\\repos\\Act14_Moviles\\Act14_Moviles\\Act14_Moviles.Android\\Act14_Moviles.Android.csproj",
+        "projectName": "Act14_Moviles.Android",
+        "projectPath": "D:\\Documentos\\Visual\\repos\\Act14_Moviles\\Act14_Moviles\\Act14_Moviles.Android\\Act14_Moviles.Android.csproj",
+        "packagesPath": "C:\\Users\\Pedro\\.nuget\\packages\\",
+        "outputPath": "D:\\Documentos\\Visual\\repos\\Act14_Moviles\\Act14_Moviles\\Act14_Moviles.Android\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\ProgramData\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid80"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid80": {
+            "projectReferences": {
+              "D:\\Documentos\\Visual\\repos\\Act14_Moviles\\Act14_Moviles\\Act14_Moviles\\Act14_Moviles.csproj": {
+                "projectPath": "D:\\Documentos\\Visual\\repos\\Act14_Moviles\\Act14_Moviles\\Act14_Moviles\\Act14_Moviles.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid80": {
+          "dependencies": {
+            "Xamarin.Android.Support.Core.Utils": {
+              "target": "Package",
+              "version": "[26.1.0.1, )"
+            },
+            "Xamarin.Android.Support.CustomTabs": {
+              "target": "Package",
+              "version": "[26.1.0.1, )"
+            },
+            "Xamarin.Android.Support.Design": {
+              "target": "Package",
+              "version": "[26.1.0.1, )"
+            },
+            "Xamarin.Android.Support.v4": {
+              "target": "Package",
+              "version": "[26.1.0.1, )"
+            },
+            "Xamarin.Android.Support.v7.AppCompat": {
+              "target": "Package",
+              "version": "[26.1.0.1, )"
+            },
+            "Xamarin.Android.Support.v7.CardView": {
+              "target": "Package",
+              "version": "[26.1.0.1, )"
+            },
+            "Xamarin.Android.Support.v7.MediaRouter": {
+              "target": "Package",
+              "version": "[26.1.0.1, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[3.6.0.264807, )"
+            }
+          }
+        }
+      }
+    },
+    "D:\\Documentos\\Visual\\repos\\Act14_Moviles\\Act14_Moviles\\Act14_Moviles\\Act14_Moviles.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Documentos\\Visual\\repos\\Act14_Moviles\\Act14_Moviles\\Act14_Moviles\\Act14_Moviles.csproj",
+        "projectName": "Act14_Moviles",
+        "projectPath": "D:\\Documentos\\Visual\\repos\\Act14_Moviles\\Act14_Moviles\\Act14_Moviles\\Act14_Moviles.csproj",
+        "packagesPath": "C:\\Users\\Pedro\\.nuget\\packages\\",
+        "outputPath": "D:\\Documentos\\Visual\\repos\\Act14_Moviles\\Act14_Moviles\\Act14_Moviles\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\ProgramData\\Xamarin\\NuGet\\",
+          "c:\\program files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[3.6.0.264807, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

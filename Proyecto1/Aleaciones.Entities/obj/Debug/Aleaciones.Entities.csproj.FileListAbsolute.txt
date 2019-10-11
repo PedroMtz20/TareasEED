@@ -1,0 +1,6 @@
+D:\Documentos\Visual\repos\Proyecto1\Aleaciones.Entities\bin\Debug\Aleaciones.Entities.dll
+D:\Documentos\Visual\repos\Proyecto1\Aleaciones.Entities\bin\Debug\Aleaciones.Entities.pdb
+D:\Documentos\Visual\repos\Proyecto1\Aleaciones.Entities\obj\Debug\Aleaciones.Entities.csprojAssemblyReference.cache
+D:\Documentos\Visual\repos\Proyecto1\Aleaciones.Entities\obj\Debug\Aleaciones.Entities.csproj.CoreCompileInputs.cache
+D:\Documentos\Visual\repos\Proyecto1\Aleaciones.Entities\obj\Debug\Aleaciones.Entities.dll
+D:\Documentos\Visual\repos\Proyecto1\Aleaciones.Entities\obj\Debug\Aleaciones.Entities.pdb
